@@ -45,7 +45,7 @@ function Home({movies}) {
   )
 }
 
-export async function getServerSideProps(context) {
+export async function  getStaticProps(context) {
 
 
   const res = await fetch(`https://next-backend-orpin.vercel.app/movies`)
